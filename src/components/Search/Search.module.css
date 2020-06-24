@@ -1,0 +1,86 @@
+.Search {
+    display: flex;
+    justify-content: center;
+    height: 40px;
+}
+.Search img,
+.Search button{
+    background: #fff;
+    height: 100%;
+    cursor: pointer;
+} 
+.Search button {
+    font-weight: bold;
+}
+.Search button{
+    height: 100%;
+    font-size: 16px;
+    border: none;
+    padding: 0 5px;
+    outline: none;
+}
+.AutoCompleteText {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.73);
+    width: 300px;
+}
+
+.AutoCompleteText input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.73);
+    padding: 10px 5px;
+    box-sizing: border-box;
+    outline: none;
+}
+.AutoCompleteText ul {
+    background-color: white;
+    list-style-type: none;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    border: 1px solid grey;
+}
+.AutoCompleteText ul::before {
+    content: "";
+}
+.AutoCompleteText li {
+    padding: 10px 5px;
+    cursor: pointer;
+}
+.AutoCompleteText li:hover {
+    background-color: rgba(128, 128, 128, 0.2);
+}
+@media (max-width: 1250px){
+    .AutoCompleteText {
+        max-width: 200px;
+    }
+ }
+
+@media (max-width: 640px){
+    .Search button,
+    .Search input{
+        font-size: 13px;
+    }
+    .Search input{
+        width: 100%;
+    }
+    .Search img{
+        background: #fff;
+        width: 40px;
+        height: 40px;
+    }
+}
+@media (max-width: 500px){
+    .Search{
+        top: 100px;
+    }
+    .Search img{
+        background: #fff;
+        height: 40px;
+    }
+}

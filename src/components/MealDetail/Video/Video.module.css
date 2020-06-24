@@ -1,0 +1,81 @@
+/* .Section {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    font-family: sans-serif;
+    background: #fff;;
+    display: none;
+    margin-right: 100px;
+    margin-top: 7px;
+    background: #fff;
+    border-radius: 5px;
+
+} */
+.Section {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+}
+.Section h1 {
+    margin: 0 auto 28px;
+    font-size: 2.5em;
+    text-transform: uppercase;
+    text-align: center;
+    color: #575757;
+}
+.VideoBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.VideoBox .Video{
+    width: 800px;
+    height: 450px;
+    text-align: center;
+}
+.VideoBox .Video iframe{
+    width: 100%;
+    height: 100%;
+}
+.VideoBox .LikeBox {
+    position: relative;
+    width: 400px;
+    height: 50px;
+    margin-top: 10px;
+    border-radius: 5px;
+    background: #fff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.VideoBox .LikeBox .Like {
+    cursor: pointer;
+    text-align: center;
+}
+.VideoBox .LikeBox .Like:hover {
+    border: 1px solid #126e1a;
+    
+}
+@media (max-width: 1094px) {
+    .Section {
+        width: 100%;
+    }
+    .VideoBox .Video{
+        width: 100%;
+        height: 300px;
+    }
+    .VideoBox .Video iframe{
+        width: 80%;
+        height: 100%;
+    }
+    .VideoBox .LikeBox {
+        position: relative;
+        width: 200px;
+        height: 50px;
+        font-size: 9px;
+    }
+}
+@media (max-width: 1024px) {
+
+}

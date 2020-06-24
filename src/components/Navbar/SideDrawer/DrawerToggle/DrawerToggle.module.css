@@ -1,0 +1,18 @@
+.DrawerToggle {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    margin-right: 100px;
+}
+
+.DrawerToggle img {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+}
+
+@media (min-width: 1151px) {
+    .DrawerToggle {
+        display: none;
+    }
+}

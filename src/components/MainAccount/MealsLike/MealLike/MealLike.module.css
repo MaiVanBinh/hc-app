@@ -1,0 +1,34 @@
+.Meal{
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+    text-align: center;
+    width: 200px;
+}
+.Meal  a {
+    text-decoration: none;
+}
+.Meal img {
+    width: 200px;
+    height: 120px;
+}
+.Meal p {
+    margin-left: 10px;
+    line-height: 20px;
+    text-align: center;
+    color: #000;
+}
+.Grid {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+.Grid button {
+    width: 100%;
+    padding: 5px 10px;
+    margin: 5px 0;
+}
+.Grid button:hover {
+    background: #e0e0e0;
+}

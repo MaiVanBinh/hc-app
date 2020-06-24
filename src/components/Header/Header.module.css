@@ -1,0 +1,13 @@
+.container{
+    position: relative;
+    padding: 0 100px;
+    border-bottom: 1px solid #f0f0f0;
+    z-index: 1;
+    
+}
+@media (max-width: 1094px){
+    .container{
+        padding: 0px 30px;
+    }
+}
+

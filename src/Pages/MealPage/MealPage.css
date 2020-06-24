@@ -1,0 +1,12 @@
+.sec{
+    background: #fff;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media (max-width:1094px){
+    .sec{
+        padding: 100px 50px 50px 50px;
+    }
+}

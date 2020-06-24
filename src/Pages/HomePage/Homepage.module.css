@@ -1,0 +1,35 @@
+.Homepage{
+    position: relative;
+    padding: 0 100px;
+    border-bottom: 1px solid #f0f0f0;
+}
+.Homepage::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 23%;
+    height: 100%;
+    background: #333;
+    z-index: -2;
+} 
+.container::after{
+    content: 'Healthy';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-size: 18vw;
+    z-index: -2;
+    font-weight: 700;
+    color: #000;
+    opacity: 0.04;
+}
+@media (max-width: 1094px){
+    .container{
+        padding: 20px 30px;
+    }
+    .container::before{
+        display: none;
+    }
+}
+

@@ -1,0 +1,51 @@
+ .Logo{
+    font-weight: 700px;
+    text-transform: uppercase;
+    color: #fff;
+    text-decoration: none;
+    font-size: 30px;
+    padding-left: 100px;
+    min-width: 100px;
+}
+ .Logo span{
+    color: #78ff00;
+}
+@media (max-width: 1090px) {
+    .Logo {
+        font-size: 24px;
+        padding-left: 80px;
+    }
+}
+
+@media (max-width: 500px) {
+    .Logo {
+        display: none;
+    }
+}
+
+.LogoMobile{
+    display: none;
+    font-weight: 700px;
+    text-transform: uppercase;
+    color: #fff;
+    text-decoration: none;
+    font-size: 30px;
+    padding-left: 100px;
+    min-width: 100px;
+}
+ .LogoMobile span{
+    color: #78ff00;
+}
+@media (max-width: 1090px) {
+    .LogoMobile {
+        font-size: 24px;
+        padding-left: 100px;
+    }
+}
+
+@media (max-width: 501px) {
+    .LogoMobile {
+        display: block;
+        padding-left: 70px;
+    }
+}

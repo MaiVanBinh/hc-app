@@ -1,0 +1,59 @@
+.Sec{
+    padding: 100px;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    background-color: #000;
+    text-align: center;
+}
+.Sec .Content{
+    position: relative;
+    width: 100%;
+}
+.Sec h3{
+    font-size: 40px;
+    font-weight: 200;
+    margin-bottom: 10px;
+}
+.Sec p{
+    position: relative;
+    font-size: 18px;
+    font-weight: 300;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+.Sec h3,
+.Sec p{
+    color: #fff;
+}
+/*Icon*/
+.Sci{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0;
+}
+.Sci ul{
+    display: flex;
+}
+.Sci ul li{
+    list-style: none;
+}
+.Sci ul li a{
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 30px;
+}
+.Sci ul li a {
+    filter: invert();
+    max-width: 40px;
+}
+.Sci ul li a:hover img{
+    opacity: 0.5;
+}
+.Copyright a{   
+    color: #ffffff;
+}

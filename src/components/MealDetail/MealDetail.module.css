@@ -1,0 +1,9 @@
+.Main {
+    position: relative;
+    margin-left: 300px;
+}
+@media (max-width: 1094px){
+    .Main {
+        margin-left: 0;
+    }
+}

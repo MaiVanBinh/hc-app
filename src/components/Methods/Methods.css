@@ -1,0 +1,42 @@
+.container {
+    float: left;
+    overflow: hidden;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.Title h2{
+    text-align: center;
+    font-size: 27px;
+    text-transform: uppercase;
+    font-weight: 400;
+    line-height: 1.2em;
+    color: #333;
+    padding: 10px 30px;
+    margin: auto;
+}
+.Title span{
+    width: 300px;
+    height: 2px;
+    background-color: #fada3e;
+    display: block;
+    margin: 0px auto;
+    margin-bottom: 20px;
+}
+.recommend-cuisine-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding-bottom: 5px;
+	overflow: hidden;
+	justify-content: center;
+	align-items: center;
+}
+.row10 {
+    margin-left: -10px;
+    margin-right: -10px;
+}

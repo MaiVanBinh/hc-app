@@ -1,0 +1,34 @@
+.Meals {
+    display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+    /* background: #78ff00; */
+    margin: 0 100px;
+    top: -100px;
+}
+.ContainerContent {
+    position: relative;
+    width: 1000px;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+.ContainerContent a{
+    text-decoration:  none;
+    color: black;
+}
+@media (max-width: 992px) {
+    .Meals{
+        margin: 0 10px;
+    }
+    .ContainerContent{
+        grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+        margin: 20px;
+    }
+}
+@media (max-width: 600px) { 
+    .Meals{
+        margin: 0 10px;
+    }
+}

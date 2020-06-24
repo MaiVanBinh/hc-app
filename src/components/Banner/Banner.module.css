@@ -1,0 +1,86 @@
+.Banner{
+    position: relative;
+    padding: 0 100px;
+    border-bottom: 1px solid #f0f0f0;
+    min-height: 100vh;
+    border-bottom: 1px solid #f0f0f0;
+    top: -86px;
+}
+.Banner::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 23%;
+    height: 100%;
+    background: #333;
+    z-index: -2;
+} 
+.Banner::after{
+    content: 'Healthy';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-size: 18vw;
+    z-index: -2;
+    font-weight: 700;
+    color: #000;
+    opacity: 0.04;
+}
+.Content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.Icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 0;
+}
+.Sci,
+.Controls {
+    position: relative;
+    display: flex;
+}
+ .Sci li{
+    list-style: none;
+    margin-right: 30px;
+}
+.Sci li img {
+    cursor: pointer;
+    display: inline-block;
+    max-width: 24px;
+    transition: 0.5s ease-in-out;
+}
+.Sci li:hover img{
+    transform: translateY(-10px);
+} 
+.Controls li {
+    list-style: none;
+    margin-left: 20px;
+    cursor: pointer;
+    filter: invert(1);
+    transition: 0.5s ease-in-out;
+}
+.Controls li:hover{
+    opacity: 0.5;
+}
+
+
+@media (max-width: 1094px){
+    .Banner{
+        padding: 20px 30px;
+    }
+    .Banner::before{
+        display: none;
+    }
+    .Content{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .Controls li {
+        filter: invert(0);
+    }
+    
+}

@@ -1,0 +1,139 @@
+.Aside {
+    position: relative;
+    top: 4px;
+    box-shadow: 0 0 4px rgba(0,0,0,0.15), 0 4px 5px rgba(0,0,0,0.3);
+    width: 270px;
+    height: 100%;
+    z-index: 10;
+    float: left;
+    background: #fff;
+    font-family: sans-serif;
+    z-index: 10000;
+}
+.Aside h1 {
+    padding: 20px;
+    text-transform: uppercase;
+    color: #575757;
+    word-wrap: break-word;
+}
+.MBar {
+    display: none;
+    cursor: pointer;
+    z-index: 20;
+}
+.Close {
+    float: right;
+    font-size: 0.9em;
+    display: none;
+    cursor: pointer;
+}
+.Aside .UserSide{
+    padding: 20px;
+    border-top: 1px solid #e9e9e9;
+}
+.Aside .UserPic{
+    float: left;
+    width: 70px;
+    height: 70px;
+    padding: 2px;
+    border-radius: 15px;
+    margin-right: 15px;
+    overflow: hidden;
+}
+.Aside .UserPic img {
+    width: 100%;
+    height: 100%;
+}
+.Aside .UserInfo {
+    display: flex;
+    flex-direction: column;
+    color: #575757;
+    height: 80px;
+}
+.Aside .Name {
+    margin-bottom: 4px;
+    font-size: 1em;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.Aside .Mail{
+    font-size: 14px;
+    font-family: sans-serif;
+    word-wrap: break-word
+}
+.SideNav {
+    border-top: 1px solid #e9e9e9;
+    padding: 20px 0;
+    padding-bottom: 18px;
+    margin-bottom: 40px;
+}
+.SideNav h2 {
+    font-size: 1.2em;
+    padding: 10px 0px 5px 20px;
+    color: #575757;
+    margin-bottom: 10px;
+}
+.SideNav ul li{
+    display: flex;
+    width: 100%;
+    position: relative;
+    padding: 8px 0px 8px 20px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    transition: all .4s ease;
+}
+.SideNav ul li.Active,
+.SideNav ul li:hover {
+    background: #eee;
+}
+.SideNav ul li span {
+    margin-right: 10px;
+    font-size: 12px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 4px;
+    background: #ff5252;
+    color: #fff;
+}
+.SideNav ul li h3 {
+    line-height: 30px;
+    font-size: 1.2em;
+    color: #575757;
+    font-weight: 100;
+}
+@media (max-width: 1150px) {
+    .MBar{
+        display: block;
+        color: #797979;
+        cursor: pointer;
+        font-size: 1.5em;
+        position: absolute;
+        width: 35px;
+        border-radius: 0 0 10px 0;
+        text-align: center;
+        background: #fff;
+        line-height: 40px;
+        z-index: 15px;
+        box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+    }
+    .Aside {
+        transition: all 0.4s ease-in-out;
+        top: 121px;
+        z-index: 10000;
+        position: absolute;
+        overflow: hidden;
+        box-shadow: unset;
+        width: 0;
+        border-top: 1px solid #e9e9e9;
+        transform: translateX(-275px);
+    }
+    .Show {
+        transform: translateX(0);
+        width: 100%;
+    }
+    .Close {
+        display: block;
+    }
+}

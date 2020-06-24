@@ -1,0 +1,46 @@
+.item {
+    overflow: hidden;
+    width: 200px;
+    height: 200px;
+    float: left;
+    padding: 10px;
+    
+}
+.item a {
+    cursor: pointer;
+    position: relative;
+    font-weight: 700;
+    text-align: center;
+    display: block;
+    background-color: #fff;
+    font-size: 16px;
+    border: none;
+    border-radius: unset;
+    height: 100%;
+    overflow: hidden;
+    padding: unset;
+    width: 100%;
+    color: #000;
+    text-decoration: none;
+}
+.item a:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.item a .ico {
+    border: 1px solid #D9D9D9;
+    border-radius: 8px;
+    height: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 10px;
+    width: 80%;
+    margin-bottom: 5px;
+}
+.item a img {
+    margin: 0 auto;
+    display: block;
+    position: relative;
+    height: 90%;
+    width: 90%;
+}

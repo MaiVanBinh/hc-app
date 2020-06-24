@@ -1,0 +1,60 @@
+ .BannerText{
+    position: relative;
+    max-width: 500px;
+    margin-right: 50px;
+    margin-top: 136px;
+}
+ .BannerText div {
+    display: none;
+} 
+.BannerText div.active {
+    display: initial;
+} 
+.BannerText h2{
+    font-size: 54px;
+    text-transform: uppercase;
+    font-weight: 800;
+    line-height: 1.2em;
+    color: #333;
+}
+.BannerText p{
+    font-size: 18px;
+    color: #333;
+    line-height: 1.8em;
+    margin: 20px 0;
+}
+.BannerText a {
+    position: relative;
+    display: inline-block;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #333;
+    letter-spacing: 1px;
+    font-size: 18px;
+    text-decoration: none;
+    padding: 15px;
+}
+.BannerText a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 100%;
+    background: #78ff00;
+    z-index: -1;
+    transition: 0.5s ease-in-out;
+}
+.BannerText a:hover::before{
+    width: 100%;
+}
+@media (max-width: 1094px){ 
+    .BannerText{
+        max-width: 100%;
+        padding-right: 0;
+        margin-top: 50px;
+    }
+    .BannerText h2 {
+        font-size: 30px;
+    }
+}

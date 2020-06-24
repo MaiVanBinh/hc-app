@@ -1,0 +1,16 @@
+.NavigationItems {
+    position: relative;
+    display: flex;
+}
+@media (max-width: 1150px){
+    .NavigationItems  {
+        flex-flow: column;
+        position: fixed;
+        top: 0;
+        width: 50%;
+        min-height: 100vh;
+        background-color: #fff;
+        z-index: 20;
+        padding: 100px 0;
+    }
+}
