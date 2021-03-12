@@ -9,7 +9,7 @@
     "@tinymce/tinymce-react": "^3.6.0",
     "axios": "^0.19.2",
     "html2canvas": "^1.0.0-rc.5",
-    "jspdf": "^1.5.3",
+    "jspdf": "^2.3.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-facebook-login": "^4.1.1",
